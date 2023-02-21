@@ -8,4 +8,4 @@ terraform {
 
 provider "hygraph" {}
 
-data "hygraph_webhook" "example" {}
+data "hygraph_webhooks" "example" {}
