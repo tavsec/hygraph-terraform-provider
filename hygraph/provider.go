@@ -108,7 +108,7 @@ func (p *hygraphProvider) Configure(ctx context.Context, req provider.ConfigureR
 			path.Root("host"),
 			"Missing HyGraph API Host",
 			"The provider cannot create the HyGraph API client as there is a missing or empty value for the HyGraph API host. "+
-				"Set the host value in the configuration or use the HASHICUPS_HOST environment variable. "+
+				"Set the host value in the configuration or use the HYGRAPH_HOST environment variable. "+
 				"If either is already set, ensure the value is not empty.",
 		)
 	}
@@ -118,7 +118,7 @@ func (p *hygraphProvider) Configure(ctx context.Context, req provider.ConfigureR
 			path.Root("auth_token"),
 			"Missing HyGraph API AuthToken",
 			"The provider cannot create the HyGraph API client as there is a missing or empty value for the HyGraph API AuthToken. "+
-				"Set the password value in the configuration or use the HASHICUPS_AUTH_TOKEN environment variable. "+
+				"Set the password value in the configuration or use the HYGRAPH_AUTH_TOKEN environment variable. "+
 				"If either is already set, ensure the value is not empty.",
 		)
 	}
