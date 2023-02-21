@@ -21,3 +21,15 @@ func NewClient(host, auth_token *string) (*Client, error) {
 
 	return &c, nil
 }
+
+type webhook struct {
+	ID   string
+	Name string
+}
+
+type webhooks []webhook
+
+func (c *Client) GetWebhooks() (webhooks, error) {
+	// TODO: Implement
+	return append(make(webhooks, 0), webhook{ID: "abc", Name: "test"}), nil
+}

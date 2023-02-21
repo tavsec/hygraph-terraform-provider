@@ -12,3 +12,7 @@ provider "hygraph" {
 }
 
 data "hygraph_webhooks" "example" {}
+
+output "example_webhooks" {
+  value = data.hygraph_webhooks.example
+}
