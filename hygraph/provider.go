@@ -106,8 +106,8 @@ func (p *hygraphProvider) Configure(ctx context.Context, req provider.ConfigureR
 	if host == "" {
 		resp.Diagnostics.AddAttributeError(
 			path.Root("host"),
-			"Missing HashiCups API Host",
-			"The provider cannot create the HashiCups API client as there is a missing or empty value for the HashiCups API host. "+
+			"Missing HyGraph API Host",
+			"The provider cannot create the HyGraph API client as there is a missing or empty value for the HyGraph API host. "+
 				"Set the host value in the configuration or use the HASHICUPS_HOST environment variable. "+
 				"If either is already set, ensure the value is not empty.",
 		)
@@ -116,8 +116,8 @@ func (p *hygraphProvider) Configure(ctx context.Context, req provider.ConfigureR
 	if auth_token == "" {
 		resp.Diagnostics.AddAttributeError(
 			path.Root("auth_token"),
-			"Missing HashiCups API AuthToken",
-			"The provider cannot create the HashiCups API client as there is a missing or empty value for the HashiCups API AuthToken. "+
+			"Missing HyGraph API AuthToken",
+			"The provider cannot create the HyGraph API client as there is a missing or empty value for the HyGraph API AuthToken. "+
 				"Set the password value in the configuration or use the HASHICUPS_AUTH_TOKEN environment variable. "+
 				"If either is already set, ensure the value is not empty.",
 		)
@@ -127,7 +127,7 @@ func (p *hygraphProvider) Configure(ctx context.Context, req provider.ConfigureR
 		return
 	}
 
-	// Create a new HashiCups client using the configuration values
+	// Create a new HyGraph client using the configuration values
 	client, err := hygraph.NewClient(&host, &auth_token)
 	if err != nil {
 		resp.Diagnostics.AddError(
@@ -139,7 +139,7 @@ func (p *hygraphProvider) Configure(ctx context.Context, req provider.ConfigureR
 		return
 	}
 
-	// Make the HashiCups client available during DataSource and Resource
+	// Make the HyGraph client available during DataSource and Resource
 	// type Configure methods.
 	resp.DataSourceData = client
 	resp.ResourceData = client
