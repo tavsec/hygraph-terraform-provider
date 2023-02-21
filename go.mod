@@ -1,4 +1,4 @@
-module tavsec/hygraph-terraform-provider
+module tavsec/hygraph
 
 go 1.19
 

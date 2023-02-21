@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"tavsec/hygraph-terraform-provider/hygraph"
+	"tavsec/hygraph/hygraph"
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 )
