@@ -15,10 +15,12 @@ require (
 	github.com/hashicorp/terraform-registry-address v0.1.0 // indirect
 	github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734 // indirect
 	github.com/hashicorp/yamux v0.0.0-20180604194846-3520598351bb // indirect
+	github.com/machinebox/graphql v0.2.2 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/oklog/run v1.0.0 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.1 // indirect
 	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
